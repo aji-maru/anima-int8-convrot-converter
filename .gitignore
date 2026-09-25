@@ -1,0 +1,12 @@
+dist/
+vendor/python310.zip
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+runtime/
+.venv/
+__pycache__/
+*.pyc
+*.log

@@ -1,0 +1,26 @@
+GitHub publication draft
+========================
+
+Repository name: anima-int8-convrot-converter
+Visibility: Public
+Description: Windows GUI and local Python installer for Comfy-Org INT8 ConvRot model conversion.
+Initial release tag: v0.1-beta
+Initial release title: 0.1 Beta
+Release asset: anima_int8_convrot_converter.exe
+
+Release notes
+-------------
+
+Initial beta release of Anima INT8 ConvRot Converter.
+
+- Native Windows GUI for safetensors file selection, output location,
+  dry-run validation, conversion progress, and remaining-time estimates.
+- App-local Python 3.10 and dependency setup with CUDA-enabled PyTorch
+  selection based on NVIDIA GPU and driver.
+- Self-extracting distribution EXE; later versions update only changed
+  packaged files when the recorded version differs.
+- Includes modified Comfy-Org quant_int8_convrot.py source, its GPL-3.0
+  license, and third-party attribution.
+
+No model weights are bundled. The end-user EXE runs without system Python;
+installation and conversion use Python inside the application folder.

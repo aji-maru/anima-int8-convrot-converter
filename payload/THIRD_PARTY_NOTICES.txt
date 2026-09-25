@@ -1,0 +1,35 @@
+Third-party software and redistribution notices
+================================================
+
+Comfy-Org comfy-model-tools
+---------------------------
+The bundled converter/quant_int8_convrot.py is based on:
+https://github.com/Comfy-Org/comfy-model-tools/blob/main/quant_int8_convrot.py
+License: GNU General Public License version 3 (GPL-3.0-only).
+The complete bundled converter source is converter/quant_int8_convrot.py.
+The complete license text is converter/LICENSE.
+
+Local modification dated 2026-09-25:
+In two quantization branches, progress output was changed from every 100
+layers to every 10 layers and at the final layer. Before adding the
+attribution comments, no other nonblank source lines differed from the
+upstream version checked on 2026-09-25.
+
+Python 3.10.11
+-------------
+The installer includes a local Python 3.10.11 runtime in python310.zip.
+Its LICENSE.txt, including the Python Software Foundation license and
+additional Windows binary and third-party terms, remains in that runtime.
+Python source and license information: https://www.python.org/downloads/release/python-31011/
+
+Dependencies installed later
+----------------------------
+The GUI downloads PyTorch, NumPy, safetensors, comfy-kitchen and packaging
+into a local virtual environment when the user chooses installation. The
+comfy-kitchen package is its official pure Python wheel. These packages are
+not bundled in the initial installer. Their own licenses apply.
+
+Model weights
+-------------
+No Anima model weights are included in this installer. Users are responsible
+for the licenses of model files they choose to convert or redistribute.
